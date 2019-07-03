@@ -9,7 +9,7 @@ pipeline {
 	}
 	stage('Build') {
 	    steps {
-		sh '/home/sandeep/Downloads/apache-maven-3.6.1 /bin/mvn install'
+		sh '/home/sandeep/Downloads/apache-maven-3.6.1/bin/mvn install'
 	}
 	    }
 	stage('Deployment') {
