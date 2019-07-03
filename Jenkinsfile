@@ -17,7 +17,16 @@ pipeline {
 		sh 'cp target/gamutkart.war /home/sandeep/Downloads/apache-tomcat-8.5.42/webapps '
 		
 	    }
-	}
 
-    }
-}
+	}
+    stage('emailnotification') {
+        steps {
+              mail bcc: '', body: 'hi job is done', cc: '', from: '', replyTo: '', subject: 'jenkins test', to: 'reddysandeep838@gmail.com'
+       
+           }
+     
+        }
+  
+     }
+ 
+   }
